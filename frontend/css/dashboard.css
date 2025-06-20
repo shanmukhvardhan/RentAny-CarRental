@@ -1,0 +1,199 @@
+:root {
+      --mint-whisper: #f7f9fc;
+      --emerald-green: #345069;
+      --forest-jewel: #1e3d59;
+      --dark-evergreen: #1e3d59;
+      --text-light: #ffffff;
+      --text-dark: #1e3d59;
+    }
+body {
+      background: linear-gradient(120deg, var(--mint-whisper) 0%, #e3e9f3 100%);
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    .dashboard-container {
+      margin-top: 40px;
+      margin-bottom: 40px;
+    }
+
+    .user-info {
+      padding: 32px;
+      background: rgba(52,80,105,0.10);
+      border-radius: 18px;
+      box-shadow: 0 8px 32px rgba(30,61,89,0.10);
+      display: flex;
+      align-items: center;
+      gap: 24px;
+      flex-wrap: wrap;
+      margin-bottom: 24px;
+      animation: fadeInDown 0.7s;
+    }
+
+    .user-details {
+      flex: 1;
+    }
+
+    .user-info h3 {
+      color: var(--forest-jewel);
+      font-weight: 700;
+      margin-bottom: 8px;
+      letter-spacing: 1px;
+    }
+
+    .user-info p {
+      font-size: 1.1rem;
+      color: var(--emerald-green);
+    }
+
+    .avatar {
+      width: 60px;
+      height: 60px;
+      background: linear-gradient(135deg, var(--emerald-green) 60%, var(--forest-jewel) 100%);
+      color: #fff;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 2rem;
+      font-weight: 700;
+      box-shadow: 0 2px 8px rgba(30,61,89,0.13);
+      margin-right: 16px;
+      user-select: none;
+    }
+
+    .btn-update-profile, .btn-logout, .btn-home, .btn-book-now {
+      border-radius: 2rem;
+      font-weight: 600;
+      letter-spacing: 0.5px;
+      transition: box-shadow 0.2s, background 0.2s;
+      box-shadow: 0 2px 8px rgba(30,61,89,0.09);
+      margin-bottom: 6px;
+    }
+
+    .btn-update-profile {
+      background: linear-gradient(90deg, var(--emerald-green), var(--forest-jewel));
+      color: #fff;
+    }
+
+    .btn-update-profile:hover {
+      background: linear-gradient(90deg, var(--forest-jewel), var(--emerald-green));
+    }
+
+    .btn-logout {
+      background: #dc3545;
+      color: #fff;
+    }
+
+    .btn-logout:hover {
+      background: #bb2d3b;
+    }
+
+    .btn-home, .btn-book-now {
+      background: #4d7699;
+      color: #fff;
+    }
+
+    .btn-home:hover, .btn-book-now:hover {
+      background: #2b4155;
+    }
+
+    .card-header {
+      background: linear-gradient(90deg, var(--emerald-green), var(--forest-jewel));
+      color: #fff;
+      font-weight: bold;
+      border-radius: 1rem 1rem 0 0;
+      font-size: 1.15rem;
+    }
+
+    .card {
+      border-radius: 1rem;
+      box-shadow: 0 8px 32px rgba(30,61,89,0.10);
+      border: none;
+      margin-bottom: 32px;
+    }
+
+    .booking-item {
+      margin-bottom: 18px;
+      padding: 18px;
+      background: rgba(247,249,252,0.92);
+      border-left: 6px solid var(--emerald-green);
+      border-radius: 12px;
+      box-shadow: 0 2px 8px rgba(30,61,89,0.08);
+      position: relative;
+      transition: box-shadow 0.2s, transform 0.2s;
+      animation: fadeInUp 0.6s;
+    }
+
+    .booking-item:hover {
+      box-shadow: 0 8px 24px rgba(30,61,89,0.13);
+      transform: translateY(-4px) scale(1.01);
+    }
+
+    .status-badge {
+      display: inline-block;
+      padding: 4px 14px;
+      border-radius: 12px;
+      font-size: 0.95rem;
+      font-weight: 600;
+      color: #fff;
+      background: linear-gradient(90deg, var(--emerald-green), var(--forest-jewel));
+      margin-left: 8px;
+    }
+
+    .status-badge.completed {
+      background: linear-gradient(90deg, #28a745, #218838);
+    }
+
+    .status-badge.upcoming {
+      background: linear-gradient(90deg, #007bff, #0056b3);
+    }
+
+    /* Toast styles */
+    .custom-toast-container {
+      position: fixed;
+      top: 24px;
+      right: 24px;
+      z-index: 9999;
+    }
+    .custom-toast {
+      min-width: 220px;
+      background: linear-gradient(90deg, var(--emerald-green), var(--forest-jewel));
+      color: #fff;
+      border-radius: 12px;
+      padding: 16px 24px;
+      margin-bottom: 12px;
+      box-shadow: 0 4px 16px rgba(30,61,89,0.18);
+      opacity: 0.96;
+      display: flex;
+      align-items: center;
+      animation: fadeInRight 0.6s;
+    }
+    .custom-toast .fa-check-circle, .custom-toast .fa-exclamation-circle {
+      margin-right: 12px;
+      font-size: 1.3rem;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .user-info {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 20px;
+      }
+      .dashboard-container {
+        margin-top: 16px;
+        margin-bottom: 16px;
+      }
+    }
+    @keyframes fadeInDown {
+      from { opacity: 0; transform: translateY(-20px);}
+      to { opacity: 1; transform: translateY(0);}
+    }
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(20px);}
+      to { opacity: 1; transform: translateY(0);}
+    }
+    @keyframes fadeInRight {
+      from { opacity: 0; transform: translateX(40px);}
+      to { opacity: 1; transform: translateX(0);}
+    }
