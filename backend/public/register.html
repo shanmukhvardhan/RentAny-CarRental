@@ -413,7 +413,7 @@
         localStorage.setItem('token', data.token);
         localStorage.setItem('user', JSON.stringify(data.user));
         showToast('Registration successful!');
-        setTimeout(() => window.location.href = '/backend/public/index.html', 1200);
+        setTimeout(() => window.location.href = '/index.html', 1200);
       } else {
         if (response.status === 409 || (data.message && data.message.toLowerCase().includes('exists'))) {
           showToast('User already exists. Please log in or use a different email.', 'error');

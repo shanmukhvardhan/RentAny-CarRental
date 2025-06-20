@@ -20,7 +20,7 @@ mongoose.connect(uri)
     pricePerDay: 3400,
     availability: true,
     description: "Premium 7-seater SUV, perfect for family trips.",
-    imageUrl: "/backend/public/assets/fortuner.png",
+    imageUrl: "/public/assets/fortuner.png",
     category: "SUV"
   },
   {
