@@ -31,7 +31,7 @@ mongoose.connect(uri)
     pricePerDay: 3200,
     availability: true,
     description: "Luxury SUV with advanced safety features.",
-    imageUrl: ("/backend/public/assets/xuv700.png"),
+    imageUrl: ("/assets/xuv700.png"),
     category: "SUV"
   },
   {
@@ -42,7 +42,7 @@ mongoose.connect(uri)
     pricePerDay: 2100,
     availability: true,
     description: "Compact SUV, great for city and highway.",
-    imageUrl: "/backend/public/assets/creta.png",
+    imageUrl: "/assets/creta.png",
     category: "SUV"
   },
   {
@@ -53,7 +53,7 @@ mongoose.connect(uri)
     pricePerDay: 2500,
     availability: true,
     description: "Spacious and rugged, ideal for long journeys.",
-    imageUrl: "/backend/public/assets/safari.png",
+    imageUrl: "/assets/safari.png",
     category: "SUV"
   },
   {
@@ -64,7 +64,7 @@ mongoose.connect(uri)
     pricePerDay: 2300,
     availability: true,
     description: "Stylish and modern SUV with great features.",
-    imageUrl: "/backend/public/assets/seltos.png",
+    imageUrl: "/assets/seltos.png",
     category: "SUV"
   },
 
@@ -77,7 +77,7 @@ mongoose.connect(uri)
     pricePerDay: 2100,
     availability: true,
     description: "Spacious and comfortable for long drives.",
-    imageUrl: "/backend/public/assets/hector.png",
+    imageUrl: "/assets/hector.png",
     category: "SUV"
   },
   {
@@ -88,7 +88,7 @@ mongoose.connect(uri)
     pricePerDay: 1800,
     availability: true,
     description: "Rugged SUV for adventure seekers.",
-    imageUrl: "/backend/public/assets/duster.png",
+    imageUrl: "/assets/duster.png",
     category: "SUV"
   },
 
@@ -101,7 +101,7 @@ mongoose.connect(uri)
     pricePerDay: 2700,
     availability: true,
     description: "Premium SUV for city and off-road.",
-    imageUrl: "/backend/public/assets/compass.png",
+    imageUrl: "/assets/compass.png",
     category: "SUV"
   },
   {
@@ -112,7 +112,7 @@ mongoose.connect(uri)
     pricePerDay: 1700,
     availability: true,
     description: "Compact and efficient SUV.",
-    imageUrl: "/backend/public/assets/kicks.png",
+    imageUrl: "/assets/kicks.png",
     category: "SUV"
   },
 
@@ -125,7 +125,7 @@ mongoose.connect(uri)
     pricePerDay: 1800,
     availability: true,
     description: "Stylish sedan with great comfort and mileage.",
-    imageUrl: "/backend/public/assets/city.png",
+    imageUrl: "/assets/city.png",
     category: "Sedan"
   },
   {
@@ -136,7 +136,7 @@ mongoose.connect(uri)
     pricePerDay: 1700,
     availability: true,
     description: "Modern sedan with advanced features.",
-    imageUrl: "/backend/public/assets/verna.png",
+    imageUrl: "/assets/verna.png",
     category: "Sedan"
   },
   {
@@ -147,7 +147,7 @@ mongoose.connect(uri)
     pricePerDay: 1600,
     availability: true,
     description: "Spacious sedan, perfect for city rides.",
-    imageUrl: "/backend/public/assets/ciaz.png",
+    imageUrl: "/assets/ciaz.png",
     category: "Sedan"
   },
   {
@@ -158,7 +158,7 @@ mongoose.connect(uri)
     pricePerDay: 1550,
     availability: true,
     description: "European style and comfort.",
-    imageUrl: "/backend/public/assets/rapid.png",
+    imageUrl: "/assets/rapid.png",
     category: "Sedan"
   },
   {
@@ -169,7 +169,7 @@ mongoose.connect(uri)
     pricePerDay: 1650,
     availability: true,
     description: "German engineering, smooth ride.",
-    imageUrl: "/backend/public/assets/vento.png",
+    imageUrl: "/assets/vento.png",
     category: "Sedan"
   },
 
@@ -182,7 +182,18 @@ mongoose.connect(uri)
     pricePerDay: 1500,
     availability: true,
     description: "Reliable and efficient sedan.",
-    imageUrl: "/backend/public/assets/yaris.png",
+    imageUrl: "/assets/yaris.png",
+    category: "Sedan"
+  },
+  {
+    name: "Skoda Rapid",
+    type: "Sedan",
+    brand: "Skoda",
+    location: "Bheemli",
+    pricePerDay: 1550,
+    availability: true,
+    description: "European style and comfort.",
+    imageUrl: "/assets/rapid.png",
     category: "Sedan"
   },
 
@@ -195,7 +206,18 @@ mongoose.connect(uri)
     pricePerDay: 1400,
     availability: true,
     description: "Compact sedan for city drives.",
-    imageUrl: "/backend/public/assets/amaze.png",
+    imageUrl: "/assets/amaze.png",
+    category: "Sedan"
+  },
+  {
+    name: "Toyota Yaris",
+    type: "Sedan",
+    brand: "Toyota",
+    location: "Siripuram",
+    pricePerDay: 1500,
+    availability: true,
+    description: "Reliable and efficient sedan.",
+    imageUrl: "/assets/yaris.png",
     category: "Sedan"
   },
 
@@ -208,7 +230,7 @@ mongoose.connect(uri)
     pricePerDay: 900,
     availability: true,
     description: "Compact car, easy to drive and park.",
-    imageUrl: "/backend/public/assets/santro.png",
+    imageUrl: "/assets/santro.png",
     category: "Mini"
   },
   {
@@ -219,7 +241,7 @@ mongoose.connect(uri)
     pricePerDay: 800,
     availability: true,
     description: "India's favorite small car, great mileage.",
-    imageUrl: "/backend/public/assets/alto.png",
+    imageUrl: "/assets/alto.png",
     category: "Mini"
   },
   {
@@ -230,7 +252,7 @@ mongoose.connect(uri)
     pricePerDay: 950,
     availability: true,
     description: "Sporty mini hatchback with style.",
-    imageUrl: "/backend/public/assets/kwid.png",
+    imageUrl: "/assets/kwid.png",
     category: "Mini"
   },
 
@@ -243,7 +265,18 @@ mongoose.connect(uri)
     pricePerDay: 900,
     availability: true,
     description: "Economical and comfortable mini car.",
-    imageUrl: "/backend/public/assets/tiago.png",
+    imageUrl: "/assets/tiago.png",
+    category: "Mini"
+  },
+  {
+    name: "Renault Kwid",
+    type: "Mini",
+    brand: "Renault",
+    location: "Bheemli",
+    pricePerDay: 950,
+    availability: true,
+    description: "Sporty mini hatchback with style.",
+    imageUrl: "/assets/kwid.png",
     category: "Mini"
   },
 
@@ -256,7 +289,18 @@ mongoose.connect(uri)
     pricePerDay: 850,
     availability: true,
     description: "Affordable and easy to maintain.",
-    imageUrl: "/backend/public/assets/datsun.png",
+    imageUrl: "/assets/datsun.png",
+    category: "Mini"
+  },
+  {
+    name: "Tata Tiago",
+    type: "Mini",
+    brand: "Tata",
+    location: "Siripuram",
+    pricePerDay: 900,
+    availability: true,
+    description: "Economical and comfortable mini car.",
+    imageUrl: "/assets/tiago.png",
     category: "Mini"
   },
 
@@ -269,7 +313,7 @@ mongoose.connect(uri)
     pricePerDay: 6500,
     availability: true,
     description: "Luxury sedan for a premium experience.",
-    imageUrl: "/backend/public/assets/bmw5.png",
+    imageUrl: "/assets/bmw5.png",
     category: "Premium"
   },
   {
@@ -280,7 +324,7 @@ mongoose.connect(uri)
     pricePerDay: 7000,
     availability: true,
     description: "Top-tier comfort and performance.",
-    imageUrl: "/backend/public/assets/benzeclass.png",
+    imageUrl: "/assets/benzeclass.png",
     category: "Premium"
   },
 
@@ -293,7 +337,18 @@ mongoose.connect(uri)
     pricePerDay: 6800,
     availability: true,
     description: "Luxury and technology in one package.",
-    imageUrl: "/backend/public/assets/audi.png",
+    imageUrl: "/assets/audi.png",
+    category: "Premium"
+  },
+  {
+    name: "Mercedes-Benz E-Class",
+    type: "Premium",
+    brand: "Mercedes-Benz",
+    location: "Bheemli",
+    pricePerDay: 7000,
+    availability: true,
+    description: "Top-tier comfort and performance.",
+    imageUrl: "/assets/benzeclass.png",
     category: "Premium"
   },
 
@@ -306,7 +361,18 @@ mongoose.connect(uri)
     pricePerDay: 7200,
     availability: true,
     description: "British luxury and performance.",
-    imageUrl: "/backend/public/assets/jaguar.png",
+    imageUrl: "/assets/jaguar.png",
+    category: "Premium"
+  },
+  {
+    name: "Mercedes-Benz E-Class",
+    type: "Premium",
+    brand: "Mercedes-Benz",
+    location: "Siripuram",
+    pricePerDay: 7000,
+    availability: true,
+    description: "Top-tier comfort and performance.",
+    imageUrl: "/assets/benzeclass.png",
     category: "Premium"
   },
 
@@ -319,7 +385,7 @@ mongoose.connect(uri)
     pricePerDay: 600,
     availability: true,
     description: "Iconic cruiser bike with classic looks.",
-    imageUrl: "/backend/public/assets/classic.png",
+    imageUrl: "/assets/classic.png",
     category: "Motorbike"
   },
   {
@@ -330,7 +396,7 @@ mongoose.connect(uri)
     pricePerDay: 400,
     availability: true,
     description: "Popular street bike, reliable and efficient.",
-    imageUrl: "/backend/public/assets/pulsar.png",
+    imageUrl: "/assets/pulsar.png",
     category: "Motorbike"
   },
 
@@ -343,7 +409,18 @@ mongoose.connect(uri)
     pricePerDay: 420,
     availability: true,
     description: "Sporty bike for city rides.",
-    imageUrl: "/backend/public/assets/rtr160.png",
+    imageUrl: "/assets/rtr160.png",
+    category: "Motorbike"
+  },
+  {
+    name: "Royal Enfield Classic 350",
+    type: "Motorbike",
+    brand: "Royal Enfield",
+    location: "Bheemli",
+    pricePerDay: 600,
+    availability: true,
+    description: "Iconic cruiser bike with classic looks.",
+    imageUrl: "/assets/classic.png",
     category: "Motorbike"
   },
 
@@ -356,7 +433,18 @@ mongoose.connect(uri)
     pricePerDay: 300,
     availability: true,
     description: "India's favorite scooter.",
-    imageUrl: "/backend/public/assets/activa.png",
+    imageUrl: "/assets/activa.png",
+    category: "Motorbike"
+  },
+  {
+    name: "TVS Apache RTR 160",
+    type: "Motorbike",
+    brand: "TVS",
+    location: "Siripuram",
+    pricePerDay: 420,
+    availability: true,
+    description: "Sporty bike for city rides.",
+    imageUrl: "/assets/rtr160.png",
     category: "Motorbike"
   },
 
@@ -369,7 +457,7 @@ mongoose.connect(uri)
     pricePerDay: 2500,
     availability: true,
     description: "Efficient backhoe loader for construction.",
-    imageUrl: "/backend/public/assets/jcb.png",
+    imageUrl: "/assets/jcb.png",
     category: "Machinery"
   },
   {
@@ -380,7 +468,7 @@ mongoose.connect(uri)
     pricePerDay: 1200,
     availability: true,
     description: "Reliable pickup for heavy loads.",
-    imageUrl: "/backend/public/assets/tatapickup.png",
+    imageUrl: "/assets/tatapickup.png",
     category: "Machinery"
   },
 
@@ -393,7 +481,18 @@ mongoose.connect(uri)
     pricePerDay: 2000,
     availability: true,
     description: "Heavy-duty tipper for construction.",
-    imageUrl: "/backend/public/assets/blazo.png",
+    imageUrl: "/assets/blazo.png",
+    category: "Machinery"
+  },
+  {
+    name: "Tata Pickup Truck",
+    type: "Pickup Truck",
+    brand: "Tata",
+    location: "Bheemli",
+    pricePerDay: 1200,
+    availability: true,
+    description: "Reliable pickup for heavy loads.",
+    imageUrl: "/assets/tatapickup.png",
     category: "Machinery"
   },
 
@@ -406,10 +505,21 @@ mongoose.connect(uri)
     pricePerDay: 1100,
     availability: true,
     description: "Compact and efficient pickup truck.",
-    imageUrl: "/backend/public/assets/Leyland.png",
+    imageUrl: "/assets/Leyland.png",
     category: "Machinery"
-  }
-      // Add more vehicles for each category/location as needed
+  },
+      
+  {
+    name: "Mahindra Blazo Tipper",
+    type: "Tipper",
+    brand: "Mahindra",
+    location: "Siripuram",
+    pricePerDay: 2000,
+    availability: true,
+    description: "Heavy-duty tipper for construction.",
+    imageUrl: "/assets/blazo.png",
+    category: "Machinery"
+  },
     ];
 
     Vehicle.insertMany(vehicles)
