@@ -322,7 +322,7 @@
         localStorage.setItem('token', data.token);
         localStorage.setItem('user', JSON.stringify(data.user));
         showToast('Login successful!');
-        setTimeout(() => window.location.href = '/backend/public/index.html', 1200);
+        setTimeout(() => window.location.href = '/index.html', 1200);
       } else {
         showToast('Login failed: ' + data.message, 'error');
       }
