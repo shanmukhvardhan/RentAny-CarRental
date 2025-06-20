@@ -1,0 +1,17 @@
+/* css/theme.css */
+:root {
+    --mint-whisper: #f7f9fc;
+    --emerald-green: #345069;
+    --forest-jewel: #1e3d59;
+    --dark-evergreen: #1e3d59;
+    --text-light: #ffffff;
+    --text-dark: #1e3d59;
+    --text-symbol:#1e3d59;
+  }
+  
+  body {
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
