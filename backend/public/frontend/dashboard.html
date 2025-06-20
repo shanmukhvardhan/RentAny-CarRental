@@ -67,7 +67,7 @@
       document.getElementById('userAvatar').textContent =
         user.name.split(' ').map(n => n[0]).join('').toUpperCase();
 
-      fetch(`http://localhost:5000/api/bookings/user/${user.id}`)
+      fetch(`/api/bookings/user/${user.id}`)
         .then(response => response.json())
         .then(data => {
           const bookingsList = document.getElementById('bookingsList');
@@ -115,7 +115,7 @@
       if (event.target.classList.contains('cancel-booking')) {
         const bookingId = event.target.getAttribute('data-id');
         if (confirm('Are you sure you want to cancel this booking?')) {
-          fetch(`http://localhost:5000/api/bookings/${bookingId}`, {
+          fetch(`/api/bookings/${bookingId}`, {
             method: 'DELETE'
           })
           .then(res => res.json())

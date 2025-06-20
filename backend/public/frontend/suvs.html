@@ -240,7 +240,7 @@
       const formattedHandoverDate = new Date(handoverDate).toISOString();
   
       try {
-        const response = await fetch(`http://localhost:5000/api/vehicles/search?category=SUV&location=${location}&pickupDate=${formattedPickupDate}&handoverDate=${formattedHandoverDate}`);
+        const response = await fetch(`/api/vehicles/search?category=SUV&location=${location}&pickupDate=${formattedPickupDate}&handoverDate=${formattedHandoverDate}`);
         
         if (response.ok) {
           const vehicles = await response.json();

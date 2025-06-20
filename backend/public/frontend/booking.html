@@ -226,7 +226,7 @@
     let total = 0;
 
     // Fetch vehicle details from API
-    fetch(`http://localhost:5000/api/vehicles/${vehicleId}/details`)
+    fetch(`/api/vehicles/${vehicleId}/details`)
       .then(res => res.json())
       .then(vehicle => {
         vehicleName = vehicle.name;
@@ -257,7 +257,7 @@
           };
 
           try {
-            const response = await fetch("http://localhost:5000/api/bookings/create", {
+            const response = await fetch("/api/bookings/create", {
               method: "POST",
               headers: {
                 "Content-Type": "application/json",
